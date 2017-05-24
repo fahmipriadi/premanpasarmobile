@@ -1,103 +1,129 @@
 <!DOCTYPE html>
 <html>
-    <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Multi-page template</title>
-	<link rel="stylesheet" href="/css/jquery.mobile-1.4.0.css">
-	<link rel="stylesheet" href="/css/index.css">
-	<script src="/js/jquery-1.8.0.js"></script>
-	<!-- <script src="http://demos.jquerymobile.com/1.4.0/_assets/js/index.js"></script> -->
-    <script src="/js/css.js"></script>
-	<script src="/js/jquery.mobile-1.4.0.js"></script>
-    </head>
-    <body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Multi-page template</title>
+    <link rel="stylesheet" href="./css/jquery.mobile-1.4.0.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-1.8.0.js"></script>
+    <!-- <script src="http://demos.jquerymobile.com/1.4.0/_assets/js/index.js"></script> -->
+    <script src="./js/css.js"></script>
+    <script src="./js/jquery.mobile-1.4.0.js"></script>
+</head>
+
+<body>
     <div data-role="page">
 
-	<div data-role="header">
-		<h1>Input Pemeriksaan</h1>
-	</div><!-- /header -->
+        <div data-role="header">
+            <h1>Input Pemeriksaan</h1>
+        </div>
+        <!-- /header -->
 
-	<div role="main" class="ui-content">
-	<label for="idpel">ID Pelanggan</label>
-    <input name="idpel" id="idpel" value="" type="text">
-    <label for="no_ba">No. BA</label>
-    <input name="no_ba" id="no_ba" value="" type="text">
-    <label for="nama_pengawas">Nama Pengawas</label>
-    <input name="nama_pengawas" id="nama_pengawas" value="" type="text">
-    <label for="teknisi_1">Teknisi 1</label>
-    <input name="teknisi_1" id="teknisi_1" value="" type="text">
-    <label for="teknisi_2">Teknisi 2</label>
-    <input name="teknisi_2" id="teknisi_2" value="" type="text">
-    <label for="nama_penghuni">Nama Penghuni</label>
-    <input name="nama_penghuni" id="nama_penghuni" value="" type="text">
-    <label for="no_telp">No Telp</label>
-    <input name="no_telp" id="no_telp" value="" type="text">
-    <label for="stand_kwh">Stand KWH</label>
-    <input name="stand_kwh" id="stand_kwh" value="" type="text">
-    <label for="stand_kvarh">Stand KVARH</label>
-    <input name="stand_kvarh" id="stand_kvarh" value="" type="text">
-    <label for="ct">CT</label>
-    <input name="ct" id="ct" value="" type="text">
-    <label for="burden_ct">Burden CT</label>
-    <input name="burden_ct" id="burden_ct" value="" type="text">
-    <label for="error_ct_r">Error CT R</label>
-    <input name="error_ct_r" id="error_ct_r" value="" type="text">
-    <label for="error_ct_s">Error CT S</label>
-    <input name="error_ct_s" id="error_ct_s" value="" type="text">
-    <label for="error_ct_t">Error CT T</label>
-    <input name="error_ct_t" id="error_ct_t" value="" type="text">
-    <label for="error_meter">Error Meter</label>
-    <input name="error_meter" id="error_meter" value="" type="text">
-    <label for="harm_r">Harmonisasi R</label>
-    <input name="harm_r" id="harm_r" value="" type="text">
-    <label for="harm_s">Harmonisasi S</label>
-    <input name="harm_s" id="harm_s" value="" type="text">
-    <label for="harm_t">Harmonisasi T</label>
-    <input name="harm_t" id="harm_t" value="" type="text">
-    <fieldset data-role="controlgroup">
-    <legend>Jenis Kegiatan:</legend>
-        <input name="gnt_ct" id="gnt_ct" checked="" type="checkbox">
-        <label for="gnt_ct">Ganti CT</label>
-        <input name="gnt_vt" id="gnt_vt" type="checkbox">
-        <label for="gnt_vt">Ganti VT</label>
-        <input name="gnt_pem" id="gnt_pem" type="checkbox">
-        <label for="gnt_pem">Ganti Pembatas</label>
-        <input name="gnt_box" id="gnt_box" type="checkbox">
-        <label for="gnt_box">Ganti Box</label>
-        <input name="gnt_wrng" id="gnt_wrng" type="checkbox">
-        <label for="gnt_wrng">Ganti Wiring</label>
-        <input name="gnt_mdm" id="gnt_mdm" type="checkbox">
-        <label for="gnt_mdm">Ganti Modem</label>
-        <input name="gnt_kbldta" id="gnt_kbldta" type="checkbox">
-        <label for="gnt_kbldta">Ganti Kabel Data</label>
-        <input name="gnt_ant" id="gnt_ant" type="checkbox">
-        <label for="gnt_ant">Ganti Antena</label>
-        <input name="gnt_mtr" id="gnt_mtr" type="checkbox">
-        <label for="gnt_mtr">Ganti Meter</label>
-    </fieldset>
-    <label for="sgl_boxapp">Segel Box APP</label>
-    <input name="sgl_boxapp" id="sgl_boxapp" value="" type="text">
-    <label for="sgl_mtr">Segel Meter</label>
-    <input name="sgl_mtr" id="sgl_mtr" value="" type="text">
-    <label for="sgl_term_mtr">Segel Terminal Meter</label>
-    <input name="sgl_term_mtr" id="sgl_term_mtr" value="" type="text">
-    <label for="sgl_ct">Segel CT</label>
-    <input name="sgl_ct" id="sgl_ct" value="" type="text">
-    <label for="sgl_pem">Segel Pembatas</label>
-    <input name="sgl_pem" id="sgl_pem" value="" type="text">
-    <label for="keterangan">Keterangan</label>
-    <input name="keterangan" id="keterangan" value="" type="text">
-    
-    <button class="ui-shadow ui-btn ui-corner-all">Input Pemeriksaan</button>
+        <div role="main" class="ui-content">
 
+            <form id="formperiksa" action="http://119.252.170.5:8000/premanpasar_test/api.php/pemeriksaan" method="POST">
+            <!--<form id="formperiksa">-->
+                <input type="hidden" id="id_periksa" name="id_periksa" value="">
+                <label for="idpel">ID Pelanggan</label>
+                <input name="idpel" id="idpel" value="" type="text">
+                <label for="no_ba">No. BA</label>
+                <input name="no_ba" id="no_ba" value="" type="text">
+                <label for="nama_pengawas">Nama Pengawas</label>
+                <input name="nama_pengawas" id="nama_pengawas" value="" type="text">
+                <label for="teknisi_1">Teknisi 1</label>
+                <input name="teknisi_1" id="teknisi_1" value="" type="text">
+                <label for="teknisi_2">Teknisi 2</label>
+                <input name="teknisi_2" id="teknisi_2" value="" type="text">
+                <label for="nama_penghuni">Nama Penghuni</label>
+                <input name="nama_penghuni" id="nama_penghuni" value="" type="text">
+                <label for="no_telp">No Telp</label>
+                <input name="no_telp" id="no_telp" value="" type="text">
+                <label for="stand_kwh">Stand KWH</label>
+                <input name="stand_kwh" id="stand_kwh" value="" type="text">
+                <label for="stand_kvarh">Stand KVARH</label>
+                <input name="stand_kvarh" id="stand_kvarh" value="" type="text">
+                <label for="rasio_ct">Rasio CT</label>
+                <input name="rasio_ct" id="rasio_ct" value="" type="text">
+                <label for="burden_ct">Burden CT</label>
+                <input name="burden_ct" id="burden_ct" value="" type="text">
+                <label for="error_ct_r">Error CT R</label>
+                <input name="error_ct_r" id="error_ct_r" value="" type="text">
+                <label for="error_ct_s">Error CT S</label>
+                <input name="error_ct_s" id="error_ct_s" value="" type="text">
+                <label for="error_ct_t">Error CT T</label>
+                <input name="error_ct_t" id="error_ct_t" value="" type="text">
+                <label for="error_meter">Error Meter</label>
+                <input name="error_meter" id="error_meter" value="" type="text">
+                <label for="harm_r">Harmonisasi R</label>
+                <input name="harm_r" id="harm_r" value="" type="text">
+                <label for="harm_s">Harmonisasi S</label>
+                <input name="harm_s" id="harm_s" value="" type="text">
+                <label for="harm_t">Harmonisasi T</label>
+                <input name="harm_t" id="harm_t" value="" type="text">
+                <fieldset data-role="controlgroup">
+                    <legend>Jenis Kegiatan:</legend>
+                    <input name="gnt_ct" id="gnt_ct" checked="" type="checkbox">
+                    <label for="gnt_ct">Ganti CT</label>
+                    <input name="gnt_vt" id="gnt_vt" type="checkbox">
+                    <label for="gnt_vt">Ganti VT</label>
+                    <input name="gnt_pem" id="gnt_pem" type="checkbox">
+                    <label for="gnt_pem">Ganti Pembatas</label>
+                    <input name="gnt_box" id="gnt_box" type="checkbox">
+                    <label for="gnt_box">Ganti Box</label>
+                    <input name="gnt_wrng" id="gnt_wrng" type="checkbox">
+                    <label for="gnt_wrng">Ganti Wiring</label>
+                    <input name="gnt_mdm" id="gnt_mdm" type="checkbox">
+                    <label for="gnt_mdm">Ganti Modem</label>
+                    <input name="gnt_kbldta" id="gnt_kbldta" type="checkbox">
+                    <label for="gnt_kbldta">Ganti Kabel Data</label>
+                    <input name="gnt_ant" id="gnt_ant" type="checkbox">
+                    <label for="gnt_ant">Ganti Antena</label>
+                    <input name="gnt_mtr" id="gnt_mtr" type="checkbox">
+                    <label for="gnt_mtr">Ganti Meter</label>
+                </fieldset>
+                <label for="sgl_boxapp">Segel Box APP</label>
+                <input name="sgl_boxapp" id="sgl_boxapp" value="" type="text">
+                <label for="sgl_mtr">Segel Meter</label>
+                <input name="sgl_mtr" id="sgl_mtr" value="" type="text">
+                <label for="sgl_term_mtr">Segel Terminal Meter</label>
+                <input name="sgl_term_mtr" id="sgl_term_mtr" value="" type="text">
+                <label for="sgl_ct">Segel CT</label>
+                <input name="sgl_ct" id="sgl_ct" value="" type="text">
+                <label for="sgl_pemb">Segel Pembatas</label>
+                <input name="sgl_pemb" id="sgl_pemb" value="" type="text">
+                <label for="keterangan">Keterangan</label>
+                <input name="keterangan" id="keterangan" value="" type="text">
 
-    </div><!-- /content -->
+                <button id="btnClick" class="ui-shadow ui-btn ui-corner-all" >Input Pemeriksaan</button>
+            </form>
+            <script>
 
-	<div data-role="footer">
-		<h4>PLN Wilayah Babel 2017</h4>
-	</div><!-- /footer -->
+            //var buttonSubmit = document.getElementById("btnClick");
+            //buttonSubmit.addEventListener("click", submitted, false);
 
-    </div><!-- /page -->
-    </body>
-</html>   
+                //function submitted(){
+                //    document.getElementById("formperiksa").submit();
+                //    alert("terkirim");
+                //}
+                
+                //$('formperiksa').submit(function(e){
+                //    e.preventDefault();
+                //    $.post("http://119.252.170.5:8000/premanpasar_test/api.php/pemeriksaan", sentData);
+                //}); 
+            </script>
+
+        </div>
+        <!-- /content -->
+
+        <div data-role="footer">
+            <h4>PLN Wilayah Babel 2017</h4>
+        </div>
+        <!-- /footer -->
+
+    </div>
+    <!-- /page -->
+</body>
+
+</html>
